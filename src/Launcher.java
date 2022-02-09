@@ -9,6 +9,7 @@ public class Launcher {
             msg = in.nextLine();
         }
         if (msg.equals("fibo")) {
+            System.out.println("Quel est le nombre ou le chiffre ?");
             String nb = in.nextLine();
             int n = Integer.parseInt(nb);
             int f1 = 1;
