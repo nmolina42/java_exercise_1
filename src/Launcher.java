@@ -5,7 +5,7 @@ public class Launcher {
         Scanner in = new Scanner(System.in);
         String msg = in.nextLine();
         if (!msg.equals("quit")){
-            System.out.println("Unknow command");
+            System.out.println("Unknown command");
         }
     }
 }
