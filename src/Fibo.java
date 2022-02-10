@@ -18,7 +18,7 @@ public class Fibo implements src.Command {
         int f2 = 1;
         int fn = n;
         if (n == 0){
-            System.out.println(fn);
+            System.out.println(n);
             return false;
         }
         if (n == 1 || n==2){

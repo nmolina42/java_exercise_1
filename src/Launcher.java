@@ -2,7 +2,7 @@ import src.Command;
 import src.Fibo;
 import src.Freq;
 import src.Quit;
-
+import src.Predict;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -17,14 +17,15 @@ public class Launcher {
         Fibo cmdFibo = new Fibo();
         Quit cmdQuit = new Quit();
         Freq cmdFreq = new Freq();
+        Predict cmdPredict = new src.Predict();
         List<Command> listeCommand;
         listeCommand = new ArrayList<>();
         listeCommand.add(cmdFibo);
         listeCommand.add(cmdQuit);
         listeCommand.add(cmdFreq);
+        listeCommand.add(cmdPredict);
         Boolean bool = false;
         Boolean check = false;
-        int count = 0;
         while (bool == false) {
             msg = in.nextLine();
             check = false;

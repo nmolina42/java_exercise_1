@@ -29,10 +29,10 @@ public class Freq implements src.Command {
                             s -> 1, // value is 1
                             Integer::sum));
             List<Object> finalWords = listWords.stream()
-                    .sorted(Comparator.comparing(frequencyMap::get).reversed()) // sort by descending frequency
-                    .distinct() // take only unique values
-                    .limit(3)   // take only the first 10
-                    .collect(Collectors.toList()); // put it in a returned list
+                    .sorted(Comparator.comparing(frequencyMap::get).reversed())
+                    .distinct()
+                    .limit(3)
+                    .collect(Collectors.toList());
             for (int i = 0; i < 3; i ++){
                 System.out.print(finalWords.get(i)+ " ");
             }
