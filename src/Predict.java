@@ -73,7 +73,7 @@ public class Predict implements src.Command {
 
             var sentence = new ArrayList<>(List.of(word));
             while (sentence.size() < 20) {
-                var nextWord = words.get(sentence.get(0)).predict();
+                var nextWord = words.get(sentence.get(sentence.size() - 1)).predict();
                 if (nextWord == null)
                     break;
                 sentence.add(nextWord);
