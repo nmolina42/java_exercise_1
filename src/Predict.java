@@ -77,8 +77,8 @@ public class Predict implements src.Command {
                 if (nextWord == null)
                     break;
                 sentence.add(nextWord);
-                System.out.println(String.join(" ", sentence));
             }
+            System.out.println(String.join(" ", sentence));
             return false;
         } catch (Exception e) {
             System.err.println("Unreadable file: " + e.getMessage());
